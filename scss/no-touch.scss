@@ -1,0 +1,113 @@
+@import "settings";
+@import "variables";
+@import "compass";
+
+.no-touch {
+
+a:hover {
+	background-color: rgba($lightBlue, 0.15);
+	color: $secondaryBlue;
+}
+
+.social-list {
+	a:hover {
+		background-color: transparent;
+	}
+}
+
+#back-up-button:hover {
+	@include transform(scale(1.1));
+	background-color: $primaryBlue;
+}
+
+.nav {
+	li {
+		a {
+			&:hover {
+				border-color: $primaryBlue;
+				padding-bottom: 0.2rem;
+				color: $white;
+				background-color: transparent;
+			}
+		}
+	}
+}
+
+.icon-ring-holder:hover {
+	.icon-ring {
+		@include transform(scale(1.75));
+		border-width: 1px;
+		opacity: 0;
+		& + span {
+			@include transform(rotate(180deg));
+		}
+	}
+}
+
+#section-5 {
+	.faq-list {
+		li {
+			p:first-child:hover {
+				background-color: rgba($lightRed, 0.5);
+			}
+			&.active {
+				p:first-child:hover {
+					background-color: $lightRed;
+				}
+			}
+		}
+	}
+}
+
+button,
+.btn,
+input[type="submit"] {
+	&:hover {
+		background-color: $darkRed;
+		color: $white;
+	}
+}
+
+
+
+.social-list {
+	.icon-facebook:hover {
+		background-image: url('../img/temp_icon_red-facebook.png');
+	}
+	.icon-twitter:hover {
+		background-image: url('../img/temp_icon_red-twitter.png');
+	}
+}
+
+
+.single-meme-holder img:hover {
+	@include box-shadow(3px 3px 14px rgba($black, 0.65));
+}
+
+
+#section-2 {
+	.service-list {
+		li:hover {
+			background-color: $gray-2;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+

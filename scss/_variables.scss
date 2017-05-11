@@ -1,0 +1,21 @@
+$defaultTransitionDuration: 0.2s;
+
+$primaryFont: "Raleway";
+$fallbackFonts: Helvetica, Arial, sans-serif;
+
+$primaryBlue: #3792a5;
+$secondaryBlue: #459aab;
+$lightBlue: #5091cd;
+$lightRed: #ff474b;
+$darkRed: #ff0a0f;
+
+$white: #FFFFFF;
+$gray-1: #e2e2e2;
+$gray-2: #b1b1b1;
+$gray-3: #797979;
+$gray-4: #3b3b3b;
+$black: #000000;
+
+@mixin showMe($color) {
+	border: 1px dashed $color;
+}

@@ -1,0 +1,110 @@
+@import "settings";
+@import "variables";
+@import "fonts";
+@import "compass";
+@import "compass/css3/user-interface";
+
+html {
+	font-size: 17px;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: $primaryFont, $fallbackFonts;
+}
+
+p, h1, h2, h3, h4, h5, h6, span, caption {
+	color: $black;
+}
+
+p {
+	font-size: 1rem;
+	line-height: 1.36;
+	font-weight: 300;
+}
+
+caption {
+	font-size: rem-calc(16px);
+}
+
+.font-regular {
+	font-weight: 400;
+}
+.font-semibold {
+	font-weight: 600;
+	}
+
+.reverse {
+	p, h1, h2, h3, h4, h5, h6, span, caption {
+		color: $white;
+	}
+}
+
+strong {
+	font-weight: 700;
+}
+
+h1 {
+	font-size: 2.1rem;
+	font-weight: 400;
+	line-height: 1.193;
+	margin: 0.5rem 0;
+}
+
+h2 {
+	font-size: 1.09rem;
+	font-weight: 700;
+	line-height: 1.36;
+}
+
+a {
+	color: $lightBlue;
+	@include transition(all $defaultTransitionDuration linear);
+}
+
+button,
+.btn,
+input[type="submit"],
+label#menu-button {
+	@include border-radius(rem-calc(9px));
+	background-color: $lightRed;
+	border: none;
+	color: $white;
+	cursor: pointer;
+	display: inline-block;
+	font-family: $primaryFont, $fallbackFonts;
+	font-size: 0.8181rem;
+	font-weight: 700;
+	letter-spacing: 1px;
+	margin: 1rem 0;
+	outline: none;
+	padding: rem-calc(20px) rem-calc(30px);
+	text-align: center;
+	text-decoration: none;
+	@include transition(background-color $defaultTransitionDuration linear);
+}
+
+
+@media #{$screen} and (min-width:#{lower-bound(768px)}) {
+	html {
+		font-size: 20px;
+	}
+	h1 {
+		font-size: 2.818rem;
+	}
+}
+
+
+@media #{$screen} and (min-width:#{lower-bound(1500px)}) {
+	html {
+		font-size: 22px;
+	}
+}
+
+
+

@@ -1,0 +1,11 @@
+{
+  "name": "baunfire_sample",
+  "version": "1.0.0",
+  "description": "Baunfire Sample Front-End",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alex Hudson",
+  "license": "ISC"
+}
